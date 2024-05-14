@@ -1,3 +1,75 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#inputFieldParent {
+    border: 3px solid #757B89;
+}
+
+/* The container */
+.checkmarkedContainer {
+    display: block;
+    position: relative;
+    /* padding-left: 35px; */
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+    font-size: 22px;
+    /* margin-top: -0.75rem; */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .checkmarkedContainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 22px;
+    width: 22px;
+  }
+  
+  /* Create a custom radio button */
+  .checkmarked {
+    position: absolute;
+    /* top: 0;
+    left: 0; */
+    height: 22px;
+    width: 22px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 1px solid gray;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .checkmarkedContainer:hover input ~ .checkmarked {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .checkmarkedContainer input:checked ~ .checkmarked {
+    background-color: #2196F3;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmarked:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .checkmarkedContainer input:checked ~ .checkmarked:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .checkmarkedContainer .checkmarked:after {
+       top: 30%;
+      left: 30%;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: white;
+  }

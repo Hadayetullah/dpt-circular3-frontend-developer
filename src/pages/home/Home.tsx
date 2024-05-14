@@ -1,12 +1,12 @@
-import React from "react";
+
 import CustomForm from "./sections/CustomForm";
 import DataList from "./sections/DataList";
 
-type Props = {};
+// type Props = {};
 
-const Home = (props: Props) => {
+const Home = () => {
   return (
-    <div className="max-w-[1300px] mx-auto py-3 md:py-6">
+    <div className="max-w-[1300px] mx-auto">
       <CustomForm />
       <DataList />
     </div>

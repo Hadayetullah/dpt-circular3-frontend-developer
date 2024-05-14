@@ -13,7 +13,7 @@ export default {
         "secondary-border": "#21217D",
         "tertiary-border": "#FCD0D0",
         "quanternary-border": "#F87171",
-        "quinary-border": "#6B7280",
+        "quinary-border": "#757B89",
 
         "primary-text": "#1B0500",
         "secondary-text": "#475263",
